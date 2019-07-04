@@ -1,0 +1,52 @@
+body{
+    margin: 0%;
+    background-color: white;
+}
+image{
+    width: 50px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #05bbfc;
+}
+
+nav a{
+    text-decoration: none;
+    font-size:1.2rem;
+    color: black;
+    padding: 0 5px;
+}
+.menu-hamburguer{
+    display: none;
+}
+
+
+@media(max-width: 740px){
+   
+    nav{
+        position: absolute;
+        right: 0;
+        top: 137px;
+        width: 44%;
+        background-color: pink;
+        text-align: right;
+        transform: translateY(-300);
+        transition: 0.2;
+
+    }
+    nav.ativa{
+
+    }
+
+    nav a{
+        display: block;
+        padding: 5px 20px;
+    }
+
+    .menu-hamburguer{
+        display: block;
+    }
+}
